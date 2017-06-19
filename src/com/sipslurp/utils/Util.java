@@ -24,14 +24,14 @@ public class Util implements Printable
 	//	printThisBill();
 //	}
 		String printData = "Sip n Slurp";//CalculationTextArea.getText() + "\n" + SpecificTextArea.getText();
-		String Header = 
+		final String Header = 
 	            "   *********Sip n Slurp*********       \n"
 	            + "Date: today: 11:20 pmTime  \n"
 	            + "---------------------------------\n"
 	            + "Name          Qty    Rate     Amt\n"
 	            + "---------------------------------\n";
 
-	      String amt  =    
+	      final String amt  =    
 	            "\n \n \nTotal Amount = 1500      \n"
 	            + "Tax =100                       \n"
 	            + "*********************************\n"

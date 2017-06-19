@@ -1,0 +1,31 @@
+
+/* 
+.regform table tr td {
+	padding:10px;
+	border:1px solid black;
+}
+ */
+
+#imgh {
+	width: 175px;
+	height: 175px;
+	margin: 0px auto 10px auto;
+	float: none;
+}
+
+#imgh img {
+	width: 175px;
+	height: 175px;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 2px #ccc;
+}
+
+#upbtn {
+	width: 200px;
+	margin: 0px auto;
+	float: none;
+}
+
+.imgd { margin-bottom: 0; }
+
+#ImageSelect { padding: 5px 10px; }

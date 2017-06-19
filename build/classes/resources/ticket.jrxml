@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ticket" pageWidth="360" pageHeight="432" orientation="Landscape" columnWidth="320" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4ccb8632-3475-4c10-9952-e7deecf739ee">
+	<property name="ireport.zoom" value="1.0000000000000007"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="pooja" class="java.lang.String"/>
+	<field name="paid" class="java.lang.String"/>
+	<field name="id" class="java.lang.String"/>
+	<pageHeader>
+		<band/>
+	</pageHeader>
+	<columnHeader>
+		<band/>
+	</columnHeader>
+	<detail>
+		<band height="350" splitType="Stretch">
+			<textField>
+				<reportElement x="110" y="225" width="210" height="20" uuid="fa9ecee0-2dba-473d-a0f4-49a29a5a7aa9"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pooja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="249" width="210" height="20" uuid="ac12c781-b928-4910-96f2-06349bdcdb03"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paid}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd-MMM-yyyy  hh:mm a">
+				<reportElement x="110" y="274" width="210" height="20" uuid="e8c4d40b-4bc4-4627-a7e7-0d652fde4fc5"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="8" y="249" width="92" height="20" uuid="883a795a-f404-4fa2-b6ea-f1cce3143b4c"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Price (Rs)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="225" width="92" height="20" uuid="c13fb825-3777-48e0-8738-61e2f80b54e7"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Pooja Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="274" width="92" height="20" uuid="a0a77173-fd46-444e-85eb-dae44e09ab89"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date of Issue]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="225" width="12" height="20" uuid="964d7e6f-dbc8-4cca-9045-68d0facaa627"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="274" width="12" height="20" uuid="07f32b40-4208-41af-97df-23b3f09ccaf9"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="249" width="12" height="20" uuid="e8496a37-235e-42fa-8d97-89f8e55495bb"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="320" height="25" uuid="f0534a5e-7c8b-458f-bb1d-69cc4279023e"/>
+				<box leftPadding="6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="200" width="12" height="20" uuid="18bfe1f3-3391-462b-abb4-255f585ff230"/>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="200" width="92" height="20" uuid="c69e04ee-c452-4de6-8253-55611089fec2"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Ticket Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="200" width="210" height="20" uuid="70e78248-8f4d-4e40-b308-608c8a6470e7"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="320" height="45" uuid="0076aea2-d0fe-41b3-b14c-2292298858b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SRI DHARMASASTHA AYYAPPASWAMY TEMPLE TRUST (R)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="124" width="320" height="25" uuid="1ae2fb8a-989b-43a4-a768-f31c8f7fcdb4"/>
+				<box leftPadding="6"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[S.No. 158, J.B.Kaval, Nandini Layout, (Mahalakshmipuram), Bangalore - 560 096, Ph : 23495827]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+</jasperReport>
